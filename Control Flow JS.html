@@ -1,0 +1,187 @@
+<html>
+<body>
+<!-- Control Flow Exercises -->
+<!-- If Else Exercise 1 -->
+<p id="demo1"></p>
+
+<script>
+if (5 > 2) {
+    document.getElementById("demo1").innerHTML = "Well done!";
+}
+</script>
+
+<!-- If Else Exercise 2 -->
+<p id="demo2">Display the result here.</p>
+
+<script>
+if (10 > 5) {
+    document.getElementById("demo2").innerHTML = "I did it!";
+}
+</script>
+
+<!-- If Else Exercise 3 -->
+<p id="demo3"></p>
+
+<script>
+var firstName = "John";
+
+if (firstName === "John") {
+    document.getElementById("demo3").innerHTML = "Hello John!";
+}
+</script>
+
+<!-- If Else Exercise 4 -->
+<p id="demo4">Display the result here.</p>
+
+<script>
+var firstName = "Greg";
+
+if (firstName === "John") {
+    document.getElementById("demo4").innerHTML = "Hello John!";
+} else {
+    document.getElementById("demo4").innerHTML = "You're not John!";
+}
+</script>
+
+<!-- If Else Exercise 5 -->
+<p id="demo5">Display the result here.</p>
+
+<script>
+var age = 25;
+
+if (age > 18) {
+    document.getElementById("demo5").innerHTML = "Old enough";
+} else {
+    document.getElementById("demo5").innerHTML = "Too young";
+}
+</script>
+
+<!-- If Else Exercise 6 -->
+<p id="demo6">Display the result here.</p>
+
+<script>
+var greeting;
+var hour = new Date().getHours();
+
+if (hour < 18) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
+
+document.getElementById("demo6").innerHTML = greeting;
+</script>
+
+
+<!-- Switch Exercise 1 -->
+<input id="myInput1" type="text" value="Apple">
+<button onclick="checkFruit()">Check Fruit</button>
+<p id="demo7"></p>
+
+<script>
+function checkFruit() {
+  var text;
+  var fruits = document.getElementById("myInput1").value;
+
+  switch(fruits) {
+    case "Banana":
+      text = "Banana is good!";
+      break;
+    case "Orange":
+      text = "I am not a fan of orange.";
+      break;
+    case "Apple":
+      text = "How you like them apples?";
+      break;
+    default:
+      text = "I have never heard of that fruit.";
+  }
+  document.getElementById("demo7").innerHTML = text;
+}
+</script>
+
+<!-- Switch Exercise 2 -->
+<input id="myInput2" type="text" value="Tutti Frutti">
+<button onclick="checkFruit()">Check Fruit</button>
+<p id="demo8"></p>
+
+<script>
+function checkFruit() {
+  var text;
+  var fruits = document.getElementById("myInput2").value;
+
+  switch(fruits) {
+    case "Banana":
+      text = "Banana is good!";
+      break;
+    case "Orange":
+      text = "I am not a fan of orange.";
+      break;
+    case "Apple":
+      text = "How you like them apples?";
+      break;
+    default:
+      text = "I have never heard of that fruit.";
+  }
+  document.getElementById("demo8").innerHTML = text;
+}
+</script>
+
+<!-- Switch Exercise 3 -->
+<input id="myInput3" type="text" value="Orange">
+<button onclick="checkFruit()">Check Fruit</button>
+<p id="demo9"></p>
+
+<script>
+function checkFruit() {
+  var text;
+  var fruits = document.getElementById("myInput3").value;
+
+  switch(fruits) {
+    case "Banana":
+      text = "Banana is good!";
+      break;
+    case "Orange":
+      text = "I am not a fan of orange.";
+      break;
+    case "Apple":
+      text = "How you like them apples?";
+      break;
+    default:
+      text = "I have never heard of that fruit.";
+  }
+  document.getElementById("demo9").innerHTML = text;
+}
+</script>
+
+<!-- Switch Exercise 4 -->
+<input id="myInput4" type="text" value="BMW">
+<button onclick="checkCar()">Check Car</button>
+<p id="demo10"></p>
+
+<script>
+function checkCar() {
+  var text;
+  var favCar = document.getElementById("myInput4").value;
+
+  switch(favCar) {
+    case "BMW":
+      text = "German car";
+      break;
+    case "Ford":
+      text = "American car";
+      break;
+    case "Peugeot":
+      text = "French car";
+      break;
+    default:
+      text = "Unknown car name";
+  }
+  document.getElementById("demo10").innerHTML = text;
+}
+</script>
+
+
+
+</body>
+</html>

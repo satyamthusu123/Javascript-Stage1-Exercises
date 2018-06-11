@@ -1,0 +1,211 @@
+<html>
+<body>
+
+<!--For Loops Exercise 1 -->
+<p id="demo1"></p>
+
+<script>
+var i;
+for (i = 0; i < 10; i++) {
+    document.getElementById("demo1").innerHTML += i + "<br>";
+}
+</script>
+
+<!--For Loops Exercise 2 -->
+<p id="demo2"></p>
+
+<script>
+var i;
+for (i = 5; i < 10; i++) {
+    document.getElementById("demo2").innerHTML += i + "<br>";
+}
+</script>
+
+<!--For Loops Exercise 3 -->
+<p id="demo3"></p>
+
+<script>
+var i;
+for (i = 5; i <= 50; i = i + 5) {
+    document.getElementById("demo3").innerHTML += i + "<br>";
+}
+</script>
+
+<!--For Loops Exercise 4 -->
+<p id="demo4"></p>
+
+<script>
+var i;
+for (i = 10; i > 0; i--) {
+    document.getElementById("demo4").innerHTML += i + "<br>";
+}
+</script>
+
+<!--For Loops Exercise 5 -->
+<p id="demo5"></p>
+
+<script>
+var text = "";
+var food = ["Pizza", "Beans", "Tacos", "Fish", "Chicken"];
+var i;
+
+for (i = 0; i < food.length; i++) {
+    text += "I love " + food[i] + "<br>";
+}
+
+document.getElementById("demo5").innerHTML = text;
+</script>
+
+<!--For Loops Exercise 6 -->
+<p id="demo6"></p>
+
+<script>
+var text = "";
+var i;
+
+for (i = 1; i < 10; i = i + 2) {
+    text += i + "<br>";
+}
+
+document.getElementById("demo6").innerHTML = text;
+</script>
+
+
+
+<!--While Loops Exercise 1 -->
+<p id="demo7"></p>
+
+<script>
+var i = 0;
+while (i < 10) {
+    document.getElementById("demo7").innerHTML += i + "<br>";
+    i++;
+}
+</script>
+
+<!--While Loops Exercise 2 -->
+<p id="demo8"></p>
+
+<script>
+var i = 5;
+while (i < 10) {
+    document.getElementById("demo8").innerHTML += i + "<br>";
+    i++;
+}
+</script>
+
+<!--While Loops Exercise 3 -->
+<p id="demo9"></p>
+
+<script>
+var i = 5;
+while (i <= 50) {
+    document.getElementById("demo9").innerHTML += i + "<br>";
+    i = i + 5;
+}
+</script>
+
+<!--While Loops Exercise 4 -->
+<p id="demo10"></p>
+
+<script>
+var i = 10;
+while (i > 0) {
+    document.getElementById("demo10").innerHTML += i + "<br>";
+    i--;
+}
+</script>
+
+<!--While Loops Exercise 5 -->
+<p id="demo11"></p>
+
+<script>
+var i = 0;
+do {
+    document.getElementById("demo11").innerHTML += i + "<br>";
+    i++;
+}
+while (i < 5)  
+</script>
+
+
+
+<!--Break Statement Exercise 1 -->
+<p id="demo12"></p>
+
+<script>
+var text = "";
+var i;
+for (i = 1; i < 10; i++) {
+    if (i === 5) break;
+    document.getElementById("demo12").innerHTML += i + "<br>";
+}
+</script>
+
+<!--Break Statement Exercise 2 -->
+<p id="demo13"></p>
+
+<script>
+var text = "";
+var i;
+for (i = 1; i < 10; i++) {
+    if (i === 5) continue;
+    document.getElementById("demo13").innerHTML += i + "<br>";
+}
+</script>
+
+<!--Break Statement Exercise 3 -->
+<p id="demo14"></p>
+
+<script>
+var text = "";
+var i;
+for (i = 1; i < 10; i++) {
+    if (i === 5 || i === 7) continue;
+    document.getElementById("demo14").innerHTML += i + "<br>";
+}
+</script>
+
+<!--Break Statement Exercise 4 -->
+<input id="myInput" type="text" value="BMW">
+<button onclick="checkCar()">Check Car</button>
+<p id="demo"></p>
+
+<script>
+function checkCar() {
+  var text;
+  var favCar = document.getElementById("myInput").value;
+
+  switch(favCar) {
+    case "BMW":
+      text = "German car";
+      break;      
+    case "Ford":
+      text = "American car";
+      break;      
+    case "Peugeot":
+      text = "French car";
+      break;
+    default:
+      text = "Unknown car name";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+<!--Break Statement Exercise 5 -->
+<p id="demo15"></p>
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var text = ""
+var i;
+for (i = 0; i < cars.length; i++) {
+    if (cars[i] === "Saab") continue;
+    text += cars[i] + "<br>";
+}
+document.getElementById("demo15").innerHTML = text;
+</script>
+
+</body>
+</html>
